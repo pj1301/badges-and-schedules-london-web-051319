@@ -24,7 +24,7 @@ def assign_rooms(attendees)
   return room_assignments
 end
 
-def printer(attendees)
+def printer(attendees) # you don't need to make it complicated with the heredoc. Simply join your arrays create an iterative loop to print values and off you go.
   a = batch_badge_creator(attendees).concat(assign_rooms(attendees))
   i = 0
   while i < a.length
