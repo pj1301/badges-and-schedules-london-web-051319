@@ -24,8 +24,6 @@ def assign_rooms(attendees)
   return room_assignments
 end
 
-
-
 def printer(attendees)
   a = batch_badge_creator(attendees).concat(assign_rooms(attendees))
   i = 0
